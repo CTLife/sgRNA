@@ -2,10 +2,10 @@
 Design genom-wide sgRNAs by using [CRISPRseek](http://bioconductor.org/packages/release/bioc/html/CRISPRseek.html).                                             
 There is to be no limitation on the number and length of target sequences.                 
 _________________________                                
-# Steps:                   
-1. Based on target regions (targetRegions.bed) and reference genome (such as mm9.fasta),  covert the bed to fasta (targetRegions.fasta) by using bedtools.                                                  
-2. Split fasta file (targetRegions.fasta) into many fasta files by using Genometools.    
- It is required that one sequence is corresponding to one file.                                            
+# Steps:                                    
+1. Based on target regions (targetRegions.bed) and reference genome (such as mm9.fasta),  covert the bed to fasta (targetRegions.fasta) by using [bedtools](https://github.com/arq5x/bedtools2).                                                                     
+2. Split fasta file (targetRegions.fasta) into many fasta files by using [Genometools](https://github.com/genometools/genometools).               
+ It is required that one sequence is corresponding to one file.                                                            
 3. Search sgRNAs for each enhancer:                      
       SaCas9: N21+NNGRRT                                    
       SpCas9: N20+NRG       
